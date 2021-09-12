@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectCell } from '../../store/actions/moves';
+import { thunkFunc } from '../../store/actions/moves';
 
 const selectBoard = (state) => state.board
 const selectGame = (state) => state.game
@@ -16,7 +16,7 @@ export const Board = () => {
       <div 
         className="tile" 
         onClick={() => dispatch(
-          selectCell(
+          thunkFunc(
             game.currentPlayer,
             props.x,
             props.y
