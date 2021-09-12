@@ -1,3 +1,21 @@
 .Board {
   margin: auto;
+  width:198px;
+  display:flex;
+  flex-wrap:wrap;
+  border:1px solid #eee;
+}
+.tile {
+  margin:auto;
+  font-size:64px;
+  display: flex;
+  width:64px;
+  height:64px;
+  border:1px solid #eee;
+}
+.tile > div {
+  width: 100%;
+  text-align: center;
+  top: -8px;
+  position: relative;
 }
